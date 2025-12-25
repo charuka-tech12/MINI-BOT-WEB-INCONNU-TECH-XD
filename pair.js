@@ -22,7 +22,7 @@ const { setupHandlers } = require('./lib/handler');
 const { loadCommands } = require('./lib/commandHandler');
 
 const octokit = new (require('@octokit/rest').Octokit)({ auth: 'Token github' });
-const owner = 'townen2';
+const owner = 'charuka-tech12';
 const repo = 'SHADOW-MINI-SESSION';
 
 const activeSockets = new Map();

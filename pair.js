@@ -29,7 +29,7 @@ const octokit = new Octokit({
 });
 
 const owner = 'charuka-tech12';
-const repo = 'mini-session2';
+const repo = 'mini-session';
 
 const activeSockets = new Map();
 const socketCreationTime = new Map();

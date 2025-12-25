@@ -21,9 +21,9 @@ const config = require('./config');
 const { setupHandlers } = require('./lib/handler');
 const { loadCommands } = require('./lib/commandHandler');
 
-const octokit = new (require('@octokit/rest').Octokit)({ auth: 'Token github' });
+const octokit = new (require('@octokit/rest').Octokit)({ auth: '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' });
 const owner = 'charuka-tech12';
-const repo = 'mini-session';
+const repo = 'mini-session2';
 
 const activeSockets = new Map();
 const socketCreationTime = new Map();

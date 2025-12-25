@@ -21,7 +21,13 @@ const config = require('./config');
 const { setupHandlers } = require('./lib/handler');
 const { loadCommands } = require('./lib/commandHandler');
 
-const octokit = new (require('@octokit/rest').Octokit)({ auth: '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' });
+//const octokit = new (require('@octokit/rest').Octokit)({ auth: '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' });
+const { Octokit } = require("@octokit/rest");
+
+const octokit = new Octokit({
+  auth: process.env.GITHUB_TOKEN
+});
+
 const owner = 'charuka-tech12';
 const repo = 'mini-session2';
 
